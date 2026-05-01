@@ -1,0 +1,123 @@
+<section class="py-5" style="background-color: #f8fafc;">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="fw-black text-uppercase letter-spacing-2" style="color: #0f172a;">
+                Get in <span style="color: #d45454;">Touch</span>
+            </h2>
+            <p style="color: #64748b; max-width: 600px; margin: 0 auto;">
+                Have questions about a car or want to sell yours? Contact our elite team for immediate assistance.
+            </p>
+        </div>
+
+        <div class="row g-0 shadow-lg rounded-overflow" style="border-radius: 20px; overflow: hidden;">
+            
+            <div class="col-lg-7 bg-white p-5">
+                <form action="#!">
+                    <div class="mb-4">
+                        <label class="form-label fw-bold text-uppercase small" style="color: #0f172a; letter-spacing: 1px;">Full Name</label>
+                        <input type="text" class="form-control custom-input" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <label class="form-label fw-bold text-uppercase small" style="color: #0f172a; letter-spacing: 1px;">Email Address</label>
+                            <input type="email" class="form-control custom-input" placeholder="john@example.com" required>
+                        </div>
+
+                        <div class="col-md-6 mb-4">
+                            <label class="form-label fw-bold text-uppercase small" style="color: #0f172a; letter-spacing: 1px;">Phone Number</label>
+                            <input type="tel" class="form-control custom-input" placeholder="+91 00000 00000">
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-bold text-uppercase small" style="color: #0f172a; letter-spacing: 1px;">Inquiry Purpose</label>
+                        <select class="form-select custom-input">
+                            <option selected disabled>Select purpose</option>
+                            <option>Buy a Car</option>
+                            <option>Sell My Car</option>
+                            <option>Book Test Drive</option>
+                            <option>General Inquiry</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-bold text-uppercase small" style="color: #0f172a; letter-spacing: 1px;">Message</label>
+                        <textarea class="form-control custom-input" rows="4" placeholder="How can we help you today?" required></textarea>
+                    </div>
+
+                    <button class="btn btn-lg w-100 fw-bold text-uppercase letter-spacing-1" 
+                            style="background-color: #d45454; color: #f8fafc; border-radius: 10px; padding: 15px;">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+            <div class="col-lg-5 p-5 d-flex flex-column justify-content-center" style="background-color: #0f172a; color: #f8fafc;">
+                <h4 class="fw-bold mb-4 text-uppercase" style="color: #d45454;">Contact Details</h4>
+                
+                <div class="mb-4 d-flex align-items-start">
+                    <div class="me-3 mt-1"><i class="bi bi-geo-alt-fill" style="color: #d45454;"></i></div>
+                    <div>
+                        <p class="mb-0 fw-bold">Location</p>
+                        <p class="opacity-75">Kochi, Kerala, India</p>
+                    </div>
+                </div>
+
+                <div class="mb-4 d-flex align-items-start">
+                    <div class="me-3 mt-1"><i class="bi bi-telephone-fill" style="color: #d45454;"></i></div>
+                    <div>
+                        <p class="mb-0 fw-bold">Phone</p>
+                        <p class="opacity-75">+91 98765 43210</p>
+                    </div>
+                </div>
+
+                <div class="mb-4 d-flex align-items-start">
+                    <div class="me-3 mt-1"><i class="bi bi-envelope-fill" style="color: #d45454;"></i></div>
+                    <div>
+                        <p class="mb-0 fw-bold">Email</p>
+                        <p class="opacity-75">support@carhaven.com</p>
+                    </div>
+                </div>
+
+                <hr class="border-secondary my-4">
+
+                <h6 class="fw-bold text-uppercase mb-3" style="letter-spacing: 1px;">Showroom Hours</h6>
+                <div class="d-flex justify-content-between mb-2 opacity-75">
+                    <span>Mon - Sat</span>
+                    <span>9:00 AM - 7:00 PM</span>
+                </div>
+                <div class="d-flex justify-content-between opacity-75">
+                    <span>Sunday</span>
+                    <span class="text-danger fw-bold">Closed</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<style>
+    .fw-black { font-weight: 900; }
+    .letter-spacing-2 { letter-spacing: 2px; }
+    .letter-spacing-1 { letter-spacing: 1px; }
+    
+    .custom-input {
+        border: 2px solid #e2e8f0;
+        border-radius: 10px;
+        padding: 12px 15px;
+        transition: all 0.3s ease;
+    }
+    
+    .custom-input:focus {
+        border-color: #d45454;
+        box-shadow: none;
+        background-color: #fff;
+    }
+
+    .form-select.custom-input {
+        cursor: pointer;
+    }
+</style>

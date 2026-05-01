@@ -1,0 +1,74 @@
+<section class="py-5" style="background-color: #f8fafc; min-height: 100vh;">
+  <div class="container bg-white rounded-4 shadow-sm p-4 p-md-5">
+    <div class="row g-5">
+      
+      <div class="col-lg-6">
+        <div class="position-relative overflow-hidden rounded-4 shadow-sm" style="border: 1px solid #e2e8f0;">
+          <img [src]="cars.image" [alt]="cars.name" 
+               class="img-fluid w-100" 
+               style="height: 450px; object-fit: contain; background-color: #f1f5f9;">
+          <div class="position-absolute top-0 start-0 m-3 badge px-3 py-2 fw-bold" 
+               style="background-color: #d45454; border-radius: 50px; font-size: 0.85rem;">
+            {{ cars.year }} Model
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <nav aria-label="breadcrumb" class="mb-3">
+          <span class="text-uppercase fw-bold small letter-spacing-1" style="color: #d45454;">{{ cars.brand }}</span>
+        </nav>
+        
+        <h1 class="fw-black text-uppercase mb-2" style="color: #0f172a; letter-spacing: -1px;">{{ cars.name }}</h1>
+        
+        <div class="d-flex align-items-center mb-4">
+          <span class="h2 fw-black m-0" style="color: #0f172a;">₹ {{ cars.price }}</span>
+          <span class="ms-3 badge bg-light text-dark border p-2">
+            <i class="bi bi-star-fill text-warning me-1"></i> 4.5 Rating
+          </span>
+        </div>
+
+        <p class="text-muted mb-4 lead" style="line-height: 1.8;">{{ cars.description }}</p>
+
+        <div class="row g-3 mb-5">
+          <div class="col-6 col-md-4">
+            <div class="p-3 border rounded-3 bg-light">
+              <small class="text-uppercase fw-bold text-muted d-block" style="font-size: 0.65rem;">Fuel Type</small>
+              <span class="fw-bold" style="color: #0f172a;">{{ cars.fuel_type }}</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="p-3 border rounded-3 bg-light">
+              <small class="text-uppercase fw-bold text-muted d-block" style="font-size: 0.65rem;">Transmission</small>
+              <span class="fw-bold" style="color: #0f172a;">{{ cars.transmission }}</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <div class="p-3 border rounded-3 bg-light">
+              <small class="text-uppercase fw-bold text-muted d-block" style="font-size: 0.65rem;">Mileage</small>
+              <span class="fw-bold" style="color: #0f172a;">{{ cars.km_driven }} km</span>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="p-3 border rounded-3 bg-light d-flex align-items-center">
+              <i class="bi bi-geo-alt-fill me-2" style="color: #d45454;"></i>
+              <span class="fw-bold" style="color: #0f172a;">Location: {{ cars.location }}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-grid d-md-flex gap-3">
+          <button class="btn btn-lg px-5 fw-bold text-uppercase" 
+                  style="background-color: #d45454; color: white; border-radius: 12px; font-size: 0.9rem; letter-spacing: 1px;">
+            Contact Seller
+          </button>
+          <button class="btn btn-lg px-5 fw-bold text-uppercase" 
+                  style="border: 2px solid #0f172a; color: #0f172a; border-radius: 12px; font-size: 0.9rem; letter-spacing: 1px;">
+            Save Car
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
